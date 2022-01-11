@@ -1,16 +1,13 @@
-const eqArrays = function(actual, expected) {
-
-  
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🔴 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
 // TEST CODE
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-// eqArrays([1, 2, 3], [3, 2, 1]) // => false
-
-// eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
-// eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
+assertEqual("Lighthouse Labs", "Bootcamp");// Should return Fail 
+assertEqual(1, 1); // Should return Pass 
+assertEqual("Honey", "Dog") // Should return Fail 
+assertEqual("Rosemary","Rosemary"); // / Should return Pass 
