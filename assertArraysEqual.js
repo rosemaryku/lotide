@@ -8,10 +8,15 @@ const eqArrays = function(arr1, arr2) {
 
 
 const assertArraysEqual = function(arr1, arr2) {
-  console.log(`Result is: ${eqArrays(arr1, arr2)}`)
+  let result = eqArrays(arr1, arr2);
+  if (result) {
+    console.log(` ✅ Assertion Passed: ${arr1} === ${arr2} `)
+  } else {
+    console.log(` 🔴 Assertion Failed: ${arr1} !== ${arr2} `)
+  }
 }
 
 // TESTS: 
-assertArraysEqual([1, 2, 3], [1, 2, 3]) //should console.log(true)
-assertArraysEqual([1, 2, 3], [1, 8, 3]) //should console.log(true)
+assertArraysEqual([1, 2, 3], [1, 2, 3]) // Should Pass 
+assertArraysEqual([1, 2, 3], [1, 8, 3]) // Should Fail 
 
