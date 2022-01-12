@@ -20,6 +20,7 @@ const eqArrays = function(arr1, arr2) {
   }
 };
 
+
 const assertArraysEqual = function(arr1, arr2) {
   let result = eqArrays(arr1, arr2);
   if (result) {

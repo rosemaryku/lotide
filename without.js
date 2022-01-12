@@ -6,6 +6,7 @@ const eqArrays = function(arr1, arr2) {
   }
 };
 
+
 const assertArraysEqual = function(arr1, arr2) {
   console.log(`Result is: ${eqArrays(arr1, arr2)}`)
 }
