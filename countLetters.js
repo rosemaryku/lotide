@@ -1,6 +1,6 @@
 // Cannot use regular assertEqual() since objects are reference types.
 
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   actual = JSON.stringify(actual);
   expected = JSON.stringify(expected);
   if (actual === expected) {
@@ -10,7 +10,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(str) {
+const countLetters = function (str) {
   let revStr = str.split(" ").join("");
   let result = {};
   for (let letter of revStr) {
@@ -36,3 +36,5 @@ assertEqual(countLetters("lighthouse in the house"), {
   e: 3,
   n: 1,
 });
+
+module.exports = countLetters;

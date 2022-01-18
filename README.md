@@ -26,20 +26,20 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-- `head(arr)`: returns the first element of an array
-- `tail(arr)`: returns the tail of an array (all elements besides first one)
-- `middle(array)`: middle accepts an array and returns the middle element(s) of the array
-- `assertEqual(actual, expected)`: will log "✅ Assertion Passed" or "🔴 Assertion Failed" when compairing actual vs expected
-- `assertArraysEqual(arr1, arr2)`: will log "✅ Assertion Passed" or "🔴 Assertion Failed" when compairing if two arrays are equal
-- `assertObjectsEqual(object1, object2)`: will log "✅ Assertion Passed" or "🔴 Assertion Failed" when compairing if two objects are equal
-- `countLetters(str)`: will return an object with the count of a specific character
-- `countOnly(allItems, itemsToCount)`: will return the count of specific items in a collection
-- `eqArrays(arr1, arr2)`: checks if array1 is equal to array2
-- `eqObjects(object1, object2)`: checks if object1 is equal to object2
-- `findKey(obj, callback)`: returns the key that meets the criteria specified by the callback function
-- `findKeyByValue(obj, value)`: returns return the first key that contains a given value or undefined
-- `flatten(arr)` : returns a flattened version of nested array
-- `letterPositions(string)` : returns return all the indices in the string where each character is found
-- `map(array, callback)`: returns a new array of elements modified by the callback function
-- `takeUntil(array, callback)` : returns a slice of a given array until the callback criteria is met
-- `without(source, itemsToRemove)`: returns a new array without the items to remove
+- `head(arr)`: Returns first element of an array
+- `tail(arr)`: Returns tail of an array (all elements expect first one)
+- `middle(array)`: Returns the middle element(s) of the array
+- `assertEqual(actual, expected)`: Logs "✅ Assertion Passed" or "🔴 Assertion Failed" when compairing actual vs expected
+- `assertArraysEqual(arr1, arr2)`: Logs "✅ Assertion Passed" or "🔴 Assertion Failed" when compairing if two arrays are equal
+- `assertObjectsEqual(object1, object2)`: Logs "✅ Assertion Passed" or "🔴 Assertion Failed" when compairing if two objects are equal
+- `countLetters(str)`: Returns an object with the count of a specific character
+- `countOnly(allItems, itemsToCount)`: Returns the count of specific items in a collection
+- `eqArrays(arr1, arr2)`: Evaluates if two arrays are equal
+- `eqObjects(object1, object2)`: Evaluates if two objects are equal
+- `findKey(obj, callback)`: Returns the key that meets the criteria specified by the callback function
+- `findKeyByValue(obj, value)`: Returns the first key that contains a given value or undefined
+- `flatten(arr)` : Returns a flattened version of nested array
+- `letterPositions(string)` : Returns return all the indices in the string where each character is found
+- `map(array, callback)`: Returns a new array of elements modified by the callback function
+- `takeUntil(array, callback)` : Returns a slice of a given array until the callback criteria is met
+- `without(source, itemsToRemove)`: Returns a new array without a list of items to remove

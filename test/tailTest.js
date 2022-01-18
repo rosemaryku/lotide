@@ -1,7 +1,7 @@
 const tail = require("../tail.js");
 const assert = require("chai").assert;
 
-describe("#tail", () => {
+describe("#tail - Returns the tail of an array (all elements besides first one)", () => {
   it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
     assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), [
       "Lighthouse",
