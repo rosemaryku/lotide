@@ -1,20 +1,21 @@
 const eqArrays = require("./eqArrays");
 
-const eqObjects = function (object1, object2) {
-  let keyArr1 = Object.keys(object1);
-  let keyArr2 = Object.keys(object2);
+const eqObjects = function (obj1, obj2) {
+  let key1Arr = Object.keys(obj1);
+  // console.log("Keys:", key1Arr);
+  let valueToReturn = true;
 
-  if (keyArr1.length === keyArr2.length) {
-    for (let key of keyArr1) {
-      if (Array.isArray(object1[key])) {
-        return eqArrays(object1[key], object2[key]);
-      } else if (object1[key] !== object2[key]) {
-        return false;
-      }
+  for (let key of key1Arr) {
+    // console.log("Obj 1 Key:", obj1[key]);
+    // console.log("Obj 2 Key:", obj2[key]);
+    if (typeof obj1[key] == "object") {
+      let valueRes = eqObjects(obj1[key], obj2[key]);
+      valueToReturn = valueRes;
+    } else if (obj1[key] !== obj2[key]) {
+      return false;
     }
-    return true;
   }
-  return false;
+  return valueToReturn;
 };
 
 module.exports = eqObjects;
